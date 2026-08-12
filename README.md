@@ -7,5 +7,8 @@
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hunanjay/hunanjay/output/github-contribution-grid-snake.svg" />
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/hunanjay/hunanjay/output/github-contribution-grid-snake.svg" />
   </picture>
+  <br>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,pytorch,langchain,docker,git,linux" alt="My Skills">
+  </a>
 </div>
-[![My Skills](https://skillicons.dev/icons?i=python,pytorch,langchain,docker,git,linux)](https://skillicons.dev)
