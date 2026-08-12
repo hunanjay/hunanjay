@@ -9,6 +9,6 @@
   </picture>
   <br>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,pytorch,langchain,docker,git,linux" alt="My Skills">
+    <img src="https://skillicons.dev/icons?i=python,fastapi,docker,git,linux,postgres,supabase" alt="My Skills">
   </a>
 </div>
