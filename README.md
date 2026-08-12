@@ -3,5 +3,5 @@
     <img src="https://readme-typing-svg.herokuapp.com/?lines=%22Hunan%20Jay!%22&center=true&size=27">
   </a>
   <br>
-  <img src="./assets/pet.svg" width="220" alt="Animated pet cat">
+  <img src="./assets/pet.svg" width="240" alt="Animated tricolor guinea pig">
 </div>

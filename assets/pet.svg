@@ -1,57 +1,71 @@
-<svg width="220" height="160" viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Animated pet cat</title>
-  <desc id="desc">A small cat pet blinking, wagging its tail, and sending floating hearts.</desc>
+<svg width="240" height="170" viewBox="0 0 240 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated tricolor guinea pig</title>
+  <desc id="desc">A round tricolor guinea pig with white, brown, and black patches blinking and gently breathing.</desc>
   <style>
-    .float { animation: float 3s ease-in-out infinite; transform-origin: 110px 90px; }
-    .tail { animation: wag 1.25s ease-in-out infinite; transform-origin: 155px 96px; }
-    .blink { animation: blink 4s infinite; transform-origin: center; }
-    .heart { animation: rise 2.8s ease-in-out infinite; opacity: 0; }
-    .heart.two { animation-delay: .9s; }
-    .heart.three { animation-delay: 1.7s; }
+    .pet { animation: breathe 3s ease-in-out infinite; transform-origin: 120px 104px; }
+    .blink { animation: blink 4.2s infinite; transform-origin: center; }
+    .ear-left { animation: ear-left 2.8s ease-in-out infinite; transform-origin: 72px 67px; }
+    .ear-right { animation: ear-right 3.1s ease-in-out infinite; transform-origin: 169px 68px; }
+    .sparkle { animation: sparkle 2.6s ease-in-out infinite; transform-origin: center; opacity: .2; }
+    .sparkle.two { animation-delay: 1.1s; }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-7px); }
-    }
-    @keyframes wag {
-      0%, 100% { transform: rotate(-9deg); }
-      50% { transform: rotate(12deg); }
+    @keyframes breathe {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-4px) scale(1.015); }
     }
     @keyframes blink {
-      0%, 92%, 100% { transform: scaleY(1); }
-      95% { transform: scaleY(.1); }
+      0%, 91%, 100% { transform: scaleY(1); }
+      94% { transform: scaleY(.12); }
     }
-    @keyframes rise {
-      0% { transform: translateY(16px) scale(.75); opacity: 0; }
-      25% { opacity: 1; }
-      100% { transform: translateY(-42px) scale(1.08); opacity: 0; }
+    @keyframes ear-left {
+      0%, 100% { transform: rotate(-2deg); }
+      50% { transform: rotate(5deg); }
+    }
+    @keyframes ear-right {
+      0%, 100% { transform: rotate(3deg); }
+      50% { transform: rotate(-5deg); }
+    }
+    @keyframes sparkle {
+      0%, 100% { transform: scale(.8); opacity: .18; }
+      50% { transform: scale(1.15); opacity: .8; }
     }
   </style>
 
-  <ellipse cx="110" cy="139" rx="58" ry="8" fill="#E6EEF8"/>
+  <ellipse cx="120" cy="148" rx="72" ry="10" fill="#E7EDF6"/>
 
-  <g class="heart" fill="#FF7A90">
-    <path d="M171 54c-5-6-15-2-15 6 0 9 15 17 15 17s15-8 15-17c0-8-10-12-15-6z"/>
+  <g class="sparkle" fill="#F4C95D">
+    <path d="M39 57 43 66l9 4-9 4-4 9-4-9-9-4 9-4 4-9z"/>
   </g>
-  <g class="heart two" fill="#FFB86C">
-    <path d="M48 67c-4-5-12-2-12 5 0 7 12 14 12 14s12-7 12-14c0-7-8-10-12-5z"/>
-  </g>
-  <g class="heart three" fill="#8ED6FF">
-    <path d="M150 31c-3-4-10-1-10 4 0 6 10 12 10 12s10-6 10-12c0-5-7-8-10-4z"/>
+  <g class="sparkle two" fill="#74C7A4">
+    <path d="M199 48 202 55l7 3-7 3-3 7-3-7-7-3 7-3 3-7z"/>
   </g>
 
-  <g class="float">
-    <path class="tail" d="M156 99c27-20 50-5 43 18-6 20-32 22-43 5" stroke="#7B5B47" stroke-width="13" stroke-linecap="round"/>
-    <path d="M63 96c0-27 21-48 47-48s47 21 47 48v13c0 20-16 36-36 36H99c-20 0-36-16-36-36V96z" fill="#D99B6C"/>
-    <path d="M68 68 80 34l23 25M152 68l-12-34-23 25" fill="#D99B6C"/>
-    <path d="M78 47 84 31l12 21M142 47l-6-16-12 21" fill="#F3C7A9"/>
-    <ellipse cx="92" cy="92" rx="7" ry="9" fill="#2F2B29" class="blink"/>
-    <ellipse cx="128" cy="92" rx="7" ry="9" fill="#2F2B29" class="blink"/>
-    <path d="M110 100c4 0 8 2 8 5s-4 6-8 6-8-3-8-6 4-5 8-5z" fill="#6B4632"/>
-    <path d="M110 110c-4 7-13 7-18 1M110 110c4 7 13 7 18 1" stroke="#6B4632" stroke-width="4" stroke-linecap="round"/>
-    <path d="M74 105h22M74 116h23M124 105h22M123 116h23" stroke="#7B5B47" stroke-width="3" stroke-linecap="round"/>
-    <path d="M86 127c8 7 40 7 48 0" stroke="#B77A55" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="82" cy="104" r="6" fill="#F2A3A3" opacity=".65"/>
-    <circle cx="138" cy="104" r="6" fill="#F2A3A3" opacity=".65"/>
+  <g class="pet">
+    <path class="ear-left" d="M67 62c-10-12-27-5-28 10-1 14 14 22 26 14" fill="#FFFFFF" stroke="#6F594D" stroke-width="4"/>
+    <path class="ear-left" d="M62 68c-5-5-13-2-14 5-1 7 7 11 13 7" fill="#F4B8B8"/>
+    <path class="ear-right" d="M172 62c10-12 27-5 28 10 1 14-14 22-26 14" fill="#26211F" stroke="#6F594D" stroke-width="4"/>
+    <path class="ear-right" d="M177 68c5-5 13-2 14 5 1 7-7 11-13 7" fill="#6F4E44"/>
+
+    <path d="M42 103c0-32 29-58 76-58s80 25 80 58c0 34-31 51-80 51s-76-17-76-51z" fill="#FFF9EF" stroke="#6F594D" stroke-width="5"/>
+
+    <path d="M43 101c2-29 28-53 66-56 2 31-15 55-44 66-9 3-17 1-22-10z" fill="#B97948"/>
+    <path d="M130 45c40 4 68 27 68 58 0 13-5 24-16 32-34-8-52-39-52-90z" fill="#272421"/>
+    <path d="M86 47c13-3 30-3 44-2 0 26-9 44-25 54-14-11-20-28-19-52z" fill="#FFF9EF"/>
+    <path d="M53 112c12-1 27-6 39-15 6 12 4 28-7 42-21-4-32-13-32-27z" fill="#D99455"/>
+    <path d="M148 96c12 15 29 22 47 22-3 10-10 18-21 25-20-8-29-24-26-47z" fill="#151313"/>
+
+    <ellipse cx="82" cy="88" rx="7" ry="9" fill="#201C1A" class="blink"/>
+    <ellipse cx="151" cy="88" rx="7" ry="9" fill="#FFFFFF" class="blink"/>
+    <ellipse cx="151" cy="88" rx="3" ry="5" fill="#201C1A" class="blink"/>
+
+    <path d="M113 104c5-5 13-5 18 0-1 6-5 10-9 10s-8-4-9-10z" fill="#C98C84"/>
+    <path d="M122 114v7" stroke="#6F594D" stroke-width="3" stroke-linecap="round"/>
+    <path d="M122 121c-5 5-12 5-16 0M122 121c5 5 12 5 16 0" stroke="#6F594D" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M60 106h35M58 117h37M145 106h35M145 117h37" stroke="#6F594D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="72" cy="105" r="6" fill="#F2B3AE" opacity=".65"/>
+    <circle cx="166" cy="105" r="6" fill="#F2B3AE" opacity=".45"/>
+
+    <path d="M78 142c10 5 72 6 84 0" stroke="#D9C0A6" stroke-width="6" stroke-linecap="round"/>
   </g>
 </svg>
