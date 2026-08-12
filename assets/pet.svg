@@ -1,0 +1,57 @@
+<svg width="220" height="160" viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated pet cat</title>
+  <desc id="desc">A small cat pet blinking, wagging its tail, and sending floating hearts.</desc>
+  <style>
+    .float { animation: float 3s ease-in-out infinite; transform-origin: 110px 90px; }
+    .tail { animation: wag 1.25s ease-in-out infinite; transform-origin: 155px 96px; }
+    .blink { animation: blink 4s infinite; transform-origin: center; }
+    .heart { animation: rise 2.8s ease-in-out infinite; opacity: 0; }
+    .heart.two { animation-delay: .9s; }
+    .heart.three { animation-delay: 1.7s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes wag {
+      0%, 100% { transform: rotate(-9deg); }
+      50% { transform: rotate(12deg); }
+    }
+    @keyframes blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(.1); }
+    }
+    @keyframes rise {
+      0% { transform: translateY(16px) scale(.75); opacity: 0; }
+      25% { opacity: 1; }
+      100% { transform: translateY(-42px) scale(1.08); opacity: 0; }
+    }
+  </style>
+
+  <ellipse cx="110" cy="139" rx="58" ry="8" fill="#E6EEF8"/>
+
+  <g class="heart" fill="#FF7A90">
+    <path d="M171 54c-5-6-15-2-15 6 0 9 15 17 15 17s15-8 15-17c0-8-10-12-15-6z"/>
+  </g>
+  <g class="heart two" fill="#FFB86C">
+    <path d="M48 67c-4-5-12-2-12 5 0 7 12 14 12 14s12-7 12-14c0-7-8-10-12-5z"/>
+  </g>
+  <g class="heart three" fill="#8ED6FF">
+    <path d="M150 31c-3-4-10-1-10 4 0 6 10 12 10 12s10-6 10-12c0-5-7-8-10-4z"/>
+  </g>
+
+  <g class="float">
+    <path class="tail" d="M156 99c27-20 50-5 43 18-6 20-32 22-43 5" stroke="#7B5B47" stroke-width="13" stroke-linecap="round"/>
+    <path d="M63 96c0-27 21-48 47-48s47 21 47 48v13c0 20-16 36-36 36H99c-20 0-36-16-36-36V96z" fill="#D99B6C"/>
+    <path d="M68 68 80 34l23 25M152 68l-12-34-23 25" fill="#D99B6C"/>
+    <path d="M78 47 84 31l12 21M142 47l-6-16-12 21" fill="#F3C7A9"/>
+    <ellipse cx="92" cy="92" rx="7" ry="9" fill="#2F2B29" class="blink"/>
+    <ellipse cx="128" cy="92" rx="7" ry="9" fill="#2F2B29" class="blink"/>
+    <path d="M110 100c4 0 8 2 8 5s-4 6-8 6-8-3-8-6 4-5 8-5z" fill="#6B4632"/>
+    <path d="M110 110c-4 7-13 7-18 1M110 110c4 7 13 7 18 1" stroke="#6B4632" stroke-width="4" stroke-linecap="round"/>
+    <path d="M74 105h22M74 116h23M124 105h22M123 116h23" stroke="#7B5B47" stroke-width="3" stroke-linecap="round"/>
+    <path d="M86 127c8 7 40 7 48 0" stroke="#B77A55" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="82" cy="104" r="6" fill="#F2A3A3" opacity=".65"/>
+    <circle cx="138" cy="104" r="6" fill="#F2A3A3" opacity=".65"/>
+  </g>
+</svg>
